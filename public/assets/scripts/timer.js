@@ -18,4 +18,3 @@ setInterval(function(){
 
 const start = document.getElementById("start");
 start.addEventListener("click",startTimer );
-
