@@ -16,4 +16,13 @@ class KataController extends AbstractController
 
         return $this->twig->render('Home/index.html.twig', ['kata' => $kata]);
     }
+
+    public function getRandomKata(): string
+    {
+        //TODO
+        $kataManager = new KataManager();
+        $randomkata = $kataManager->selectRandomOne();
+
+        return $this->twig->render('Home/index.html.twig', ['randomkata' => $randomkata]);
+    }
 }
