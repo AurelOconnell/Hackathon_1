@@ -59,6 +59,12 @@
     overflow: hidden;
 }
 
+
+.emot {
+    height: 20px;
+    width: 20px;
+}
+
 #timer{
     font-weight: bold;
     font-size: 2em;
