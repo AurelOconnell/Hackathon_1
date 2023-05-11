@@ -2,21 +2,59 @@
 
     /* Colors */
 
-    --p-color: ;
-    --s-color: ;
-    --a-color: ;
+    --p-color: #00ffc5;
+    --s-color: #481620;
+    --a-color: #d55672;
+    --b-color: #0075A2;
+    --light-color: white;
 
     /* Anim */
 
-    
+    --main-anim: .4s cubic-bezier(0,0.2,0,1);
 
     /* Spacing */
 }
 
+.kata {
+    background-color: var(--b-color)!important;
+}
+
+.footer {
+    background-color: var(--a-color);
+}
+
+.header {
+    background-color: var(--a-color);
+}
+
 .kata .qa {
-    height: 50vh;
+    height: fit-content;
 }
 
 .answer-txt {
     height: 250px;
+}
+
+.p-color {
+    background-color: var(--p-color);
+    color: var(--a-color);
+}
+
+.s-color {
+    background-color: var(--s-color);
+    color: var(--a-color);
+}
+
+#game-area {
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: var(--main-anim);
+}
+
+.invisible-game {
+    grid-template-rows: 0fr!important;
+}
+
+.dino {
+    overflow: hidden;
 }
