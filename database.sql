@@ -61,3 +61,31 @@ ALTER TABLE `item`
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+CREATE DATABASE hackathon_1;
+
+USE hackathon_1;
+
+CREATE TABLE kata (
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+titre VARCHAR(255) NOT NULL, 
+énoncé TEXT NOT NULL,
+correction TEXT NOT NULL);
+
+INSERT INTO kata (titre, énoncé, correction) VALUES 
+('Titre 1', 
+'ENONCE 1',
+'Correction 1'
+ ), 
+ ('Titre 2', 
+ 'ENONCE 2',
+ 'Correction 2'),
+ ('Titre 3',
+ 'ENONCE 3',
+ 'Correction 3'),
+ ('Titre 4', 
+ 'ENONCE 4',
+ 'Correction 4'),
+ ('Titre 5',
+ 'ENONCE 5',
+ 'Correction 5');
