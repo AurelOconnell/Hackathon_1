@@ -1,3 +1,22 @@
-body {
-    color: #f76c6c;
+:root {
+
+    /* Colors */
+
+    --p-color: ;
+    --s-color: ;
+    --a-color: ;
+
+    /* Anim */
+
+    
+
+    /* Spacing */
+}
+
+.kata .qa {
+    height: 50vh;
+}
+
+.answer-txt {
+    height: 250px;
 }
