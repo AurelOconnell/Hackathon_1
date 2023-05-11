@@ -1,0 +1,56 @@
+<section class="kata">
+    <div class="container">
+        <div class="qa row row-cols-md-2">
+
+            <div class="l-part col">
+            
+                <div class="btn btn-primary w-100">Générer un Kata</div>
+
+                <div class="gif border border-3 border-secondary rounded-3 text-center">
+                
+                Gifs Contextuel
+                
+                </div>
+
+                <div class="instructions">
+                        <div>
+                              <p> {{ kata.énoncé }}</p>
+
+                        </div>
+                </div>
+
+                <div class="rtfm btn btn-primary w-100">RTFM</div>
+            </div>
+
+            <div class="r-part col">
+                
+                <div class="d-flex">
+                    <div class="btn btn-primary">Start</div>
+                    <div class="timer flex-grow-1 border border-secondary border-4 rounded-3 text-center">Compte a rebourd</div>
+                </div>
+
+                <div>
+                    <form action="/">
+                        <div class="form-floating">
+                            <textarea class="answer-txt border-3 border-secondary rounded-3 w-100 form-control" placeholder="Code ta réponse ici." type="text-area" name="answer" id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">Ton algorithme</label>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="btn btn-secondary flex-grow-1">Pause</div>
+                            <div type="submit" class="btn btn-primary flex-grow-1">Submit</div>
+                        </div>
+
+                    </form>
+
+                    <div class="btn btn-outline-info">Montrer la réponse</div>
+                    <div class="btn btn-success">Réussi !</div>
+                    <div class="btn btn-danger">Raté !</div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
