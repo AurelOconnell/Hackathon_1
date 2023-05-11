@@ -13,9 +13,15 @@ class AjaxController extends AbstractController
         header('Content-Type: application/json');
     }
 
-    public function getRandomGif()
+    public function getRandomGif($keyword, $id)
     {
-        $url = "http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=YOUR_API_KEY&limit=5";
-        print_r(json_decode(file_get_contents($url)));
+        $katamanager = new KataManager;
+        $kata = $katamanager->selectOneById($id);
+
+        $apiKey = 'Bo7Vgu7CaPL9cCzq1S7b4qBVLa4C0QtN';
+        $url = "http://api.giphy.com/v1/gifs/search?q=". $keyword ."&api_key=" . $apiKey . "&limit=1";
+        
+
+        return json_decode(file_get_contents($url));
     }
 }
