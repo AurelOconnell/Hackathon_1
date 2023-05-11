@@ -14,7 +14,7 @@ class KataManager extends AbstractManager
     public function selectOneById(int $kata): array|false
     {
         // prepared request
-        $statement = $this->pdo->prepare("SELECT id FROM " . static::TABLE . " ORDER BY rand()");
+        $statement = $this->pdo->prepare("SELECT id FROM " . static::TABLE . " WHERE `id` = :id");
         $statement->bindValue('kata', $kata, \PDO::PARAM_INT);
         $statement->execute();
 
