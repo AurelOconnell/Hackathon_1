@@ -58,3 +58,8 @@
 .dino {
     overflow: hidden;
 }
+
+.emot {
+    height: 20px;
+    width: 20px;
+}
