@@ -10,7 +10,7 @@
 
     /* Anim */
 
-    
+    --main-anim: .4s cubic-bezier(0,0.2,0,1);
 
     /* Spacing */
 }
@@ -43,4 +43,18 @@
 .s-color {
     background-color: var(--s-color);
     color: var(--a-color);
+}
+
+#game-area {
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: var(--main-anim);
+}
+
+.invisible-game {
+    grid-template-rows: 0fr!important;
+}
+
+.dino {
+    overflow: hidden;
 }
