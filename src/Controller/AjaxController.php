@@ -21,7 +21,11 @@ class AjaxController extends AbstractController
         $apiKey = 'Bo7Vgu7CaPL9cCzq1S7b4qBVLa4C0QtN';
         $url = "http://api.giphy.com/v1/gifs/search?q=". $keyword ."&api_key=" . $apiKey . "&limit=1";
         
+        $giphyResponse = json_decode(file_get_contents($url));
 
-        return json_decode(file_get_contents($url));
+        return $this->twig->render('Home/index.html.twig', [
+            'giphyResponse' => $giphyResponse,
+            'keyword' => $kata['keyword']
+        ]);
     }
 }

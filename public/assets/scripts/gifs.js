@@ -1,9 +1,12 @@
-const GIPHY_API_KEY = 'Bo7Vgu7CaPL9cCzq1S7b4qBVLa4C0QtN';
-const giphy = new GiphyJSAPI(GIPHY_API_KEY);
+gifGen = document.getElementById('gif-generator');
 
-giphy.search('cat').then((response) => {
-    const gifUrl = response.data[0].images.original.url;
-    const gifImg = document.createElement('img');
-    gifImg.setAttribute('src', gifUrl);
-    document.getElementById('giphy-container').appendChild(gifImg);
-  });
+gifGen.addEventListener('click', function () {
+
+    apiKey = 'Bo7Vgu7CaPL9cCzq1S7b4qBVLa4C0QtN';
+    url = "http://api.giphy.com/v1/gifs/search?q=" + 'numbers' + "&api_key=" + apiKey + "&limit=1";
+
+    fetch(url)
+    .then(response => response.json())
+    .then (data => console.log(data[0].url))
+    .catch(() => alert('error'));
+});
