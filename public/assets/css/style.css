@@ -15,6 +15,13 @@
     /* Spacing */
 }
 
+
+
+.rtfm:hover a {
+  text-decoration: none;
+  color: var(--light-color)!important;
+}
+
 .kata {
     background-color: var(--b-color)!important;
 }
@@ -40,8 +47,28 @@
     color: var(--a-color);
 }
 
+.pb-color {
+    background-color: var(--p-color);
+    color: var(--a-color);
+}
+
+.p-color:hover {
+    background-color: var(--a-color);
+    color: var(--light-color);
+}
+
 .s-color {
-    background-color: var(--s-color);
+    background-color: var(--a-color);
+    color: var(--light-color);
+}
+
+.sb-color {
+    background-color: var(--a-color);
+    color: var(--light-color);
+}
+
+.sb-color:hover {
+    background-color: var(--light-color);
     color: var(--a-color);
 }
 
@@ -55,7 +82,11 @@
     grid-template-rows: 0fr!important;
 }
 
-.dino {
+#dino {
+    overflow: hidden;
+}
+
+#answer {
     overflow: hidden;
 }
   

@@ -10,7 +10,7 @@ class KataManager extends AbstractManager
     {
         $statement = $this->pdo->query("
         SELECT * 
-        FROM article
+        FROM " . static::TABLE . "
         ORDER BY RAND() LIMIT 1
         ");
 
