@@ -71,14 +71,6 @@
   }
 
   .logo {
-    height: 12%;
-    width: 12%;
+    width: 130px;
   }
 
-  .logbut {
-    background-color: black;
-  }
-
-  .dropbut {
-    background-color: grey;
-  }

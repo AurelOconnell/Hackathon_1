@@ -1,41 +1,67 @@
-<div class="header container-fluid py-4">
-        <nav class="navbar navbar-expand nav-bg-color shadow-sm navbar-bottom">
-            <div
-                class="container-fluid">
-                {# left side of navbar #}
-                    <img src="/assets/images/logo.png" class="logo" alt="logo">
-                {# right side of navbar#}
-                <div class="justify-content-end dropbut">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            {# Register #}
-                            <div class="container-fluid">
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                                  <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                                  <ul class="navbar-nav">
-                                    <li class="nav-item dropdown">
-                                      <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Langages
-                                      </button>
-                                      <ul class="dropdown-menu dropdown-menu-dark">
-                                        <li><a class="dropdown-item" href="#">PHP</a></li>
-                                        <li><a class="dropdown-item" href="#">JavaScript</a></li>
-                                        <li><a class="dropdown-item" href="#">Python</a></li>
-                                      </ul>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            {# logon #}
-                            <li class="nav-item logbut">
-                                <a class="nav-link" href="">
-                                    <button type="button" class="btn">Logout</button>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
+<header>
+    <nav class="navbar navbar-expand nav-bg-color shadow-sm navbar-bottom">
+        <div class="container-fluid">
+            {# left side of navbar #}
+            <img src="/assets/images/logo.png" class="logo" alt="logo">
+            {# right side of navbar#}
+            <div class="justify-content-end">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    {# contest #}
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            <span class="d-none d-md-inline">PHP</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35"
+                                viewBox="0 0 50 50">
+                                <path
+                                    d="M 25 12 C 11.542969 12 1 17.710938 1 25 C 1 32.289063 11.542969 38 25 38 C 38.457031 38 49 32.289063 49 25 C 49 17.710938 38.457031 12 25 12 Z M 22.507813 16 L 25.128906 16 L 24.296875 20 L 26.636719 20 C 28.121094 20 29.117188 20.207031 29.683594 20.726563 C 30.238281 21.238281 30.40625 22.078125 30.183594 23.222656 L 29.144531 28 L 26.480469 28 L 27.4375 23.582031 C 27.554688 22.976563 27.507813 22.554688 27.304688 22.332031 C 27.101563 22.109375 26.65625 22 25.988281 22 L 23.890625 22 L 22.625 28 L 20 28 Z M 11 20 L 16.332031 20 C 18.875 20 20.414063 21.703125 19.8125 24.246094 C 19.113281 27.199219 17.238281 28 13.792969 28 L 12.144531 28 L 11.621094 31 L 8.972656 31 Z M 32 20 L 37.332031 20 C 39.875 20 41.414063 21.703125 40.8125 24.246094 C 40.113281 27.199219 38.238281 28 34.792969 28 L 33.144531 28 L 32.621094 31 L 29.972656 31 Z M 13.269531 22 L 12.515625 26 L 14.226563 26 C 15.707031 26 17.082031 25.832031 17.3125 23.625 C 17.398438 22.769531 17.042969 22 15.332031 22 Z M 34.269531 22 L 33.515625 26 L 35.226563 26 C 36.707031 26 38.082031 25.832031 38.3125 23.625 C 38.398438 22.769531 38.042969 22 36.332031 22 Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    {# add pic #}
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            <span class="d-none d-md-inline">Python</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35"
+                                viewBox="0 0 48 48">
+                                <path fill="#0277BD"
+                                    d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2H15.22h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z">
+                                </path>
+                                <path fill="#FFC107"
+                                    d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    {# profil #}
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            <span class="d-none d-md-inline">JavaScript</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35"
+                                viewBox="0 0 48 48">
+                                <path fill="#f7df1e" d="M6,42V6h36v36H6z"></path>
+                                <path fill="#000001"
+                                    d="M29.538,32.947c0.692,1.124,1.444,2.201,3.037,2.201c1.338,0,2.04-0.665,2.04-1.585 c0-1.101-0.726-1.492-2.198-2.133l-0.807-0.344c-2.329-0.988-3.878-2.226-3.878-4.841c0-2.41,1.845-4.244,4.728-4.244 c2.053,0,3.528,0.711,4.592,2.573l-2.514,1.607c-0.553-0.988-1.151-1.377-2.078-1.377c-0.946,0-1.545,0.597-1.545,1.377 c0,0.964,0.6,1.354,1.985,1.951l0.807,0.344C36.452,29.645,38,30.839,38,33.523C38,36.415,35.716,38,32.65,38 c-2.999,0-4.702-1.505-5.65-3.368L29.538,32.947z M17.952,33.029c0.506,0.906,1.275,1.603,2.381,1.603 c1.058,0,1.667-0.418,1.667-2.043V22h3.333v11.101c0,3.367-1.953,4.899-4.805,4.899c-2.577,0-4.437-1.746-5.195-3.368 L17.952,33.029z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    {# logout #}
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            <span class="d-none d-md-inline">Log Out</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-box-arrow-in-right" viewbox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                                <path fill-rule="evenodd"
+                                    d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
+        </div>
     </nav>
-</div>
+</header>
