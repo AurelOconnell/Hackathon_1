@@ -2,54 +2,65 @@
     <div class="container">
         <div class="qa row row-cols-md-2 py-4">
 
-            <div class="l-part col">
-            
+            <div class="l-part col-md-6">
+
                 <div class="btn btn-primary p-color w-100" id="gif-generator">Générer un Kata</div>
 
                 <div class="gif rounded-3">
-                
-                {% include "API/giphy.html.twig" %}
-                
+
+                    {% include "API/giphy.html.twig" %}
+
                 </div>
 
-                <div class="instructions">
-                        <div>
-                              <p> {{ kata.énoncé }}</p>
-                        </div>
-                </div>
-
-                <div class="rtfm btn btn-primary w-100"> 
-                    <a href="https://www.php.net/docs.php" title="RTFM">RTFM</a>
+                <div class="instructions m-0">
+                    <div>
+                        <p> {{ kata.énoncé }}</p>
                     </div>
+                </div>
+
+                <div class="btn rtfm btn-primary p-color w-100 mb-4">
+                    <a href="https://www.php.net/docs.php" title="RTFM">Pense à la doc 😉 </a>
+                </div>
             </div>
 
-            <div class="r-part col">
-                
+            <div class="r-part col-md-6">
+
                 <div class="d-flex">
                     <div class="btn btn-primary p-color" id="start">Start</div>
-                    <div id="timer" class="timer flex-grow-1 border border-secondary s-color border-4 rounded-3 text-center"  ></div>
+                    <div id="timer"
+                        class="timer flex-grow-1 border border-secondary s-color border-4 rounded-3 text-center"></div>
+                    <div class="btn btn-primary p-color" id="stop">Stop</div>
                 </div>
 
                 <div>
                     <form action="/">
                         <div class="form-floating">
-                            <textarea class="answer-txt border-3 border-secondary s-color rounded-3 w-100 form-control" placeholder="Code ta réponse ici." type="text-area" name="answer" id="floatingTextarea"></textarea>
-                            <label for="floatingTextarea">Ton algorythme</label>
+                            <textarea class="answer-txt border-3 border-secondary s-color rounded-3 w-100 form-control"
+                                placeholder="Code ta réponse ici." type="text-area" name="answer"
+                                id="floatingTextarea" style="height: 300px"></textarea>
+                            <label for="floatingTextarea"> Saisis ton algorithme, ici</label>
                         </div>
 
                         <div class="d-flex">
-                            <div class="btn btn-secondary s-color flex-grow-1" id="pause-btn"></div>
-                            <div type="submit" class="btn btn-primary p-color flex-grow-1">Submit</div>
+                            <div type="submit" class="btn btn-primary p-color flex-grow-2" id="submitAnswer">Soumet ta réponse !</div>
+                            <div class="btn btn-outline-info p-color">Montrer la réponse</div>
                         </div>
-
+                        <div class="btn btn-secondary s-color flex-grow-1" id="pause-btn"></div>
                     </form>
 
-                    <div class="btn btn-outline-info">Montrer la réponse</div>
-                    <div class="btn btn-success">Réussi !</div>
-                    <div class="btn btn-danger">Raté !</div>
+                    
 
                 </div>
 
+            </div>
+
+            <div class="modal" id="modal">
+                <div class="modal-back"></div>
+                <div class="modal-container">
+                    <h1>Bien joué !</h1>
+                    <p >Kata réussi 👍 </p>
+                    <button  id="popupbtn"><a href="#" id="modal-close">Retente ta chance</a></button>
+                </div>
             </div>
 
         </div>
