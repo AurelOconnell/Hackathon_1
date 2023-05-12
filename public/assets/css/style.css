@@ -20,11 +20,11 @@
 }
 
 .footer {
-    background-color: var(--a-color);
+    background-color: var(--light-color);
 }
 
 .header {
-    background-color: var(--a-color);
+    background-color: var(--light-color);
 }
 
 .kata .qa {
