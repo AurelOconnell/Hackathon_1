@@ -4,17 +4,19 @@
 
             <div class="l-part col-md-6">
 
-                <div class="btn btn-primary p-color w-100" id="gif-generator">Générer un Kata</div>
+                <div class="btn btn-primary p-color w-100" id="generator">Générer un Kata</div>
 
-                <div class="gif rounded-3">
-
-                    {% include "API/giphy.html.twig" %}
-
+                <div class="d-flex justify-content-center align-items-center">
+                    <img 
+                        src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" 
+                        alt="Gif about this Kata"
+                        class = "w-100 rounded-3" 
+                        id="kata-gif">
                 </div>
 
                 <div class="instructions m-0">
                     <div>
-                        <p> {{ kata.énoncé }}</p>
+                        <p id="kata-instruction"></p>
                     </div>
                 </div>
 

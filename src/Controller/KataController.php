@@ -13,7 +13,7 @@ class KataController extends AbstractController
     {
         $kataManager = new KataManager();
         $kata = $kataManager->selectOneById($id);
-
+        
         return $this->twig->render('Home/index.html.twig', ['kata' => $kata]);
     }
 
@@ -21,8 +21,8 @@ class KataController extends AbstractController
     {
         //TODO
         $kataManager = new KataManager();
-        $randomkata = $kataManager->selectRandomOne();
+        $randomKata = $kataManager->selectRandomOne();
 
-        return $this->twig->render('Home/index.html.twig', ['randomkata' => $randomkata]);
+        return $this->twig->render('Home/index.html.twig', ['randomKata' => $randomKata]);
     }
 }

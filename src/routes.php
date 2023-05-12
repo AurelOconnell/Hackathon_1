@@ -9,4 +9,5 @@
 return [
     '' => ['HomeController', 'index',],
     'show' => ['KataController', 'show',['id']],
+    'api/kata/random' => ['AjaxController', 'getRandomKata',]
 ];
