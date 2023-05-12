@@ -4,7 +4,7 @@
 
     --p-color: #00ffc5;
     --s-color: #481620;
-    --a-color: #d55672;
+    --a-color: #b9729ccc;
     --b-color: #0075A2;
     --light-color: white;
 
@@ -68,4 +68,17 @@
 #timer{
     font-weight: bold;
     font-size: 2em;
+  }
+
+  .logo {
+    height: 12%;
+    width: 12%;
+  }
+
+  .logbut {
+    background-color: black;
+  }
+
+  .dropbut {
+    background-color: grey;
   }
