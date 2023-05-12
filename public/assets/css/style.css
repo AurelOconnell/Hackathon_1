@@ -64,13 +64,61 @@
     height: 20px;
     width: 20px;
 }
+/* Timer */
 
 #timer{
     font-weight: bold;
     font-size: 2em;
   }
 
-  .logo {
+ .logo {
     width: 130px;
+  }
+
+/* PopUp Answer */
+
+  .modal {
+    display: none;
+  }
+  .modal-back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba( 0, 0, 0, .25 )
+  }
+
+  .modal-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 500px;
+    min-width: 300px;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 5px;
+    background: white;
+    transform: translate(-50%, -50%)
+  }
+
+  .modal-container p, h1{
+    color: var(--s-color);
+  }
+
+  .modal-container h1{
+    color: var(--s-color);
+  }
+
+  #modal-close{
+    background-color: var(--p-color);
+    color: var(--s-color);
+    vertical-align: center;
+  }
+  #popupbtn{
+    background-color: var(--p-color);
+    color: var(--s-color);
   }
 
